@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Data Science and Ethics","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"1. Fundamentals","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"1.1 What is Ethics?"},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"1.2 Why is it needed?"},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"1.3 History of Ethics"},{"t":"heading","d":3,"p":{"lines":[7,8]},"v":"1.4 Ethics Concepts"},{"t":"heading","d":3,"p":{"lines":[8,9]},"v":"1.5 Ethics Principles"},{"t":"heading","d":3,"p":{"lines":[9,10]},"v":"1.6 <code>Explore</code>: Responsible AI"}]},{"t":"heading","d":2,"p":{"lines":[13,14]},"v":"2. Data Collection","c":[{"t":"heading","d":3,"p":{"lines":[15,16]},"v":"2.1 Ethics &amp; Data Ownership"},{"t":"heading","d":3,"p":{"lines":[16,17]},"v":"2.2 Intellectual Property &amp; Rights"},{"t":"heading","d":3,"p":{"lines":[17,18]},"v":"2.3 Human Consent &amp; Oversight"},{"t":"heading","d":3,"p":{"lines":[18,19]},"v":"2.4 Data Validity (Quality)"},{"t":"heading","d":3,"p":{"lines":[19,20]},"v":"2.5 Data Diversity (Representation)"},{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"2.6 <code>Explore</code>: The 5Cs Framework"}]},{"t":"heading","d":2,"p":{"lines":[24,25]},"v":"3. Data Privacy","c":[{"t":"heading","d":3,"p":{"lines":[26,27]},"v":"3.1 Ethics &amp; Data Privacy"},{"t":"heading","d":3,"p":{"lines":[27,28]},"v":"3.2 Degrees of Data Privacy"},{"t":"heading","d":3,"p":{"lines":[28,29]},"v":"3.3 Anonymity &amp; De-Identification"},{"t":"heading","d":3,"p":{"lines":[29,30]},"v":"3.4 Data Leakage &amp; Misuse"},{"t":"heading","d":3,"p":{"lines":[30,31]},"v":"3.5 Transparency &amp; Regulation"},{"t":"heading","d":3,"p":{"lines":[31,32]},"v":"3.6 <code>Explore</code>: Case Studies"}]},{"t":"heading","d":2,"p":{"lines":[35,36]},"v":"4. Algorithm Fairness","c":[{"t":"heading","d":3,"p":{"lines":[37,38]},"v":"4.1 Fairness &amp; Bias (Types)"},{"t":"heading","d":3,"p":{"lines":[38,39]},"v":"4.2 Unfairness &amp; Harm (Types)"},{"t":"heading","d":3,"p":{"lines":[39,40]},"v":"4.3 Data Misrepresentation"},{"t":"heading","d":3,"p":{"lines":[40,41]},"v":"4.4 Algorithm Explainability"},{"t":"heading","d":3,"p":{"lines":[41,42]},"v":"4.5 Mitigating Bias"},{"t":"heading","d":3,"p":{"lines":[42,43]},"v":"4.6 <code>Explore</code>: Case Studies"}]},{"t":"heading","d":2,"p":{"lines":[46,47]},"v":"5. Tools &amp; Frameworks","c":[{"t":"heading","d":3,"p":{"lines":[48,49]},"v":"5.1 Ethics-Driven Culture"},{"t":"heading","d":3,"p":{"lines":[49,50]},"v":"5.2 Code of Conduct"},{"t":"heading","d":3,"p":{"lines":[50,51]},"v":"5.3 Ethics Checklists"},{"t":"heading","d":3,"p":{"lines":[51,52]},"v":"5.4 Industry Frameworks (AI)"},{"t":"heading","d":3,"p":{"lines":[52,53]},"v":"5.5 Regulatory Frameworks (Governance)"},{"t":"heading","d":3,"p":{"lines":[53,54]},"v":"5.6 <code>Explore</code>: 97 Things About Ethics"}]},{"t":"heading","d":2,"p":{"lines":[57,58]},"v":"6. Summary &amp; Resources","c":[{"t":"heading","d":3,"p":{"lines":[59,60]},"v":"6.1 Learn: Data Lifecycle"},{"t":"heading","d":3,"p":{"lines":[60,61]},"v":"6.2 Apply: Ethical Principles"},{"t":"heading","d":3,"p":{"lines":[61,62]},"v":"6.3 Adopt: Ethical Culture"},{"t":"heading","d":3,"p":{"lines":[62,63]},"v":"6.4 Verify: Ethics Checklists"},{"t":"heading","d":3,"p":{"lines":[63,64]},"v":"6.5 Explore: Case Studies"},{"t":"heading","d":3,"p":{"lines":[64,65]},"v":"6.6 Explore: Research Projects"}]}]})</script>
+</body>
+</html>
